@@ -1,0 +1,25 @@
+# CODEOWNERS — PR이 해당 경로를 건드리면 지정된 오너에게 리뷰가 자동 요청됩니다.
+#
+# 사용법
+# 1) 아래 @SeungJo-02 를 실제 담당자 핸들로 바꾸거나 팀원을 추가하세요.
+#    조직 팀 단위로 묶으려면 @2026-Techeer-Summer-Boot-Camp/<team-slug> 형식 사용.
+# 2) 영역별 오너를 정했다면 주석(#)을 제거해 활성화하세요.
+# 3) (선택) Settings → Branches → main 의 "Require review from Code Owners" 로 강제.
+#
+# 문법: <path-glob>  @owner1 @owner2   (아래쪽 = 더 구체적 = 우선)
+# ──────────────────────────────────────────────────────────────────
+
+# ── 전역 기본 (모든 변경) ────────────────────────────────────────
+*                               @SeungJo-02
+
+# ── CI / 설정 ────────────────────────────────────────────────────
+/.github/                       @SeungJo-02
+/config/                        @SeungJo-02
+/requirements.txt               @SeungJo-02
+
+# ── 영역별 오너 (팀원 배정 후 주석 해제) ─────────────────────────
+# **/models.py                  @your-db-owner
+# **/migrations/                @your-db-owner
+# **/views.py                   @your-api-owner
+# **/serializers.py             @your-api-owner
+# **/urls.py                    @your-api-owner
