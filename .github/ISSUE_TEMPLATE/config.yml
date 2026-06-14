@@ -1,0 +1,8 @@
+# Issue Template 진입점 설정
+# blank_issues_enabled: false → 사용자가 반드시 템플릿을 선택해야 함
+blank_issues_enabled: false
+
+contact_links:
+  - name: 💬 일반 질문 / 토론
+    url: https://github.com/orgs/2026-Techeer-Summer-Boot-Camp/discussions
+    about: 버그/기능이 아닌 질문이나 아이디어는 Discussions를 이용해 주세요.

@@ -1,0 +1,33 @@
+# 변경 파일 경로 → area/* 라벨 매핑 (Python + Django 기준)
+area/api:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '**/views.py'
+      - '**/serializers.py'
+      - '**/urls.py'
+
+area/model:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '**/models.py'
+      - '**/migrations/**'
+
+area/admin:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '**/admin.py'
+
+area/config:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'config/**'
+      - 'manage.py'
+      - 'requirements.txt'
+      - '.github/**'
+
+area/test:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '**/tests.py'
+      - '**/test_*.py'
+      - 'tests/**'
